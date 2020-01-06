@@ -180,7 +180,6 @@ h4 {
   font-size: 0.9em;
 }
 
-
 .reset-filter-a {
   text-decoration: none;
 }
@@ -605,5 +604,11 @@ h4 {
 
   .triangle-container {
     position: relative;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .col-1-row-2 {
+    max-width: 140px;
   }
 }
