@@ -1,0 +1,63 @@
+.accordian {
+  padding-bottom: $gutter * 2;
+
+  .container--accordian {
+    padding: 0 $gutter/2;
+    @include respond-to("medium") {
+      padding: 0;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    padding-top: $gutter;
+    padding-bottom: $gutter * 2;
+    font-size: 1.8em;
+  }
+
+  &__open-btn {
+    width: 100%;
+    text-align: left;
+    font-size: 1.3em;
+    padding: $gutter;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: none;
+    background: #e1e1e1;
+
+    &--spaced {
+      margin: $gutter / 4 0;
+    }
+  }
+
+  &__plus {
+    text-align: right;
+
+    &--hidden {
+      display: none;
+    }
+
+    &--visible {
+      display: block;
+    }
+  }
+
+  &__text {
+    padding: 0 $gutter;
+    line-height: 1.8em;
+    transition: max-height 0.5s, visibility 0.3s, padding 0.5s;
+    margin: 0;
+
+    &--hidden {
+      max-height: 0;
+      visibility: hidden;
+    }
+
+    &--visible {
+      max-height: 800px;
+      visibility: visible;
+      padding: $gutter;
+    }
+  }
+}

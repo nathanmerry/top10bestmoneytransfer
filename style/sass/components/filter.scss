@@ -1,0 +1,191 @@
+.filter {
+  // border: 1px solid black;
+  // background: rgba($white, 0.7);
+  background: $white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  transition: opacity 0.2s, transform 0.2s;
+
+  @include respond-to("medium") {
+    position: relative;
+    width: 27.5%;
+    margin-right: 20px;
+  }
+
+  &--visible {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+
+  &--hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+
+    @include respond-to("medium") {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
+  // @include respond-to("medium") {
+  //   visibility: hidden;
+  // }
+
+  &__header {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 14px;
+    border-bottom: 2px solid #d5d5d5;
+    background-color: #f0f1f2;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+
+    @include respond-to("medium") {
+      border: none;
+      padding-bottom: 0;
+      background-color: $white;
+    }
+  }
+
+  &__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond-to("medium") {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  &__header-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+    @include respond-to("medium") {
+      font-weight: 400;
+    }
+  }
+
+  &__title {
+    font-size: 1.2em;
+    font-weight: 500;
+
+    @include respond-to("medium") {
+      font-weight: 400;
+      font-size: 1.3rem;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__destructve-btn {
+    font-size: 1em;
+    color: #0075ff;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  &__body-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__label {
+    padding: $gutter 0;
+    @include respond-to("medium") {
+      padding: ($gutter * 1.5) 0 $gutter 0;
+      font-weight: 400;
+    }
+  }
+
+  &__btn-cont {
+    border: 1px solid rgba($black, 0.2);
+  }
+
+  &__refine-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    padding: $gutter/2;
+    border: none;
+    outline: none;
+    
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--top {
+      border-bottom: 1px solid rgba($black, 0.2);
+    }
+
+    &--active {
+      background: #f0f1f2;
+      color: $blue;
+    }
+
+    &--inactive {
+      background: $white;
+      color: $black;
+    }
+
+    
+  }
+
+  &__bottom-row {
+    position: absolute;
+    bottom: 0;
+    padding: $gutter 0;
+    background: $blue;
+    color: $white;
+    width: 100%;
+    text-align: center;
+
+    @include respond-to("medium") {
+      background: none;
+      position: relative;
+      color: $black;
+      text-align: right;
+      font-weight: 300;
+      font-size: 0.8em;
+    }
+  }
+
+  &__go-btn {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+
+  &__reset-lg {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--sm {
+    display: block;
+
+    @include respond-to("medium") {
+      display: none;
+    }
+  }
+
+  &--lg {
+    display: none;
+
+    @include respond-to("medium") {
+      display: block;
+    }
+  }
+}

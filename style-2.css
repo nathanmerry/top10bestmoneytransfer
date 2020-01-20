@@ -1,157 +1,5 @@
-html {
-  font-size: 100%;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f3f3f3;
-}
-* {
-  box-sizing: border-box;
-  font-family: Roboto, sans-serif;
-}
-a {
-  color: inherit;
-}
-.nav-theme {
-  border-bottom: 2px solid #0000001c;
-  background: #fff;
-}
+/*  */
 
-.display-mob {
-  display: none;
-}
-
-.container {
-  position: relative;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-.nav-container {
-  padding: 3px 1.5%;
-}
-.nav-layout {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-list {
-  list-style-type: none;
-  display: flex;
-}
-.nav-list-item {
-  padding: 0 1rem;
-}
-.nav-list-item-lc {
-  padding-left: 1rem;
-}
-.nav-list-item-link {
-  text-decoration: none;
-  font-weight: 700;
-  color: #000;
-  font-size: 0.9rem;
-}
-.main-max-cont {
-  position: relative;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-.hero-container {
-  background-image: url(images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
-  background-size: cover;
-  color: #fff;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.hero-header {
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-.hero-para {
-  margin: 1rem 0;
-}
-.side-guttering {
-  padding: 0 23px;
-}
-.span-right {
-  margin-right: 5px;
-}
-.disc-container {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  background: #2d2d2db3;
-  top: -25px;
-  color: #fff;
-  padding: 3px 23px;
-}
-.disc-layout {
-  display: flex;
-  justify-content: space-between;
-}
-.disc-col-1 {
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-}
-.image-tick {
-  width: 1rem;
-}
-.bold {
-  font-weight: 700;
-}
-.disc-text-1 {
-  margin-right: 5px;
-}
-.disc-text-2 {
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-.main-layout {
-  display: flex;
-  padding-top: 15px;
-}
-.main-container p,
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-  color: inherit;
-}
-.sidebar {
-  position: relative;
-  max-width: 27%;
-}
-.sidebar-cont {
-  margin-right: 20px;
-}
-.cust-h {
-  font-size: 1.3rem;
-  border-bottom: 1px solid #ddd;
-  font-weight: 500;
-  padding-bottom: 20px;
-}
-.cust-sub-h-cont {
-  margin: 30px 0 15px 0;
-  display: flex;
-  align-items: center;
-}
-.cust-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #00000036;
-}
-.questions-image {
-  width: 0.9rem;
-}
 .cust-list-a-active {
   background: #f0f1f2;
   color: #0176ff !important;
@@ -160,14 +8,6 @@ h4 {
 .cust-list-a-inactive {
   background: none;
   color: black !important;
-}
-
-.cust-list-a {
-  display: flex;
-  padding: 15px 10px;
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #000;
 }
 
 .cust-list-a--top {
@@ -212,6 +52,7 @@ h4 {
   font-weight: 500;
   padding-top: 3px;
 }
+
 .card-cont {
   background-color: #fff;
   color: #000;
@@ -349,6 +190,7 @@ h4 {
   align-items: center;
   font-size: 0.9em;
   z-index: 1;
+  
 }
 .read-more-btn:hover {
   background: #3fa843;
@@ -362,6 +204,7 @@ h4 {
   text-decoration: none;
   padding: 3px 5px;
   border-radius: 7px;
+  min-width: 76px;
 }
 
 .visit-image {
@@ -392,12 +235,14 @@ h4 {
 .wysywig hr {
   margin-top: 75px;
   margin-bottom: 35px;
+  border: 1px solid #0000000f;
 }
 .wysywig h3 {
   font-size: 1.3em;
 }
 .footer-theme {
-  background: #010233;
+  background-image: linear-gradient(to right, #2f91c1, #2bbd7e);
+
   color: #fff;
 }
 .footer-container {
@@ -438,6 +283,7 @@ h4 {
 .footer-row--2 {
   display: none;
 }
+
 @media only screen and (max-width: 768px) {
   .logo-main {
     padding: 10px 0;
@@ -453,15 +299,6 @@ h4 {
     display: none;
   }
 
-  .hero-container {
-    height: 170px;
-  }
-  .hero-header {
-    font-size: 2.3em;
-  }
-  .sidebar {
-    display: none;
-  }
   .wysywig {
     padding: 10px;
   }
@@ -491,38 +328,8 @@ h4 {
   }
 }
 @media only screen and (max-width: 425px) {
-  .nav-container {
-    padding: 14px 1.5%;
-  }
-
-  .display-mob {
-    display: flex;
-    overflow: hidden;
-  }
-
-  .hero-container {
-    background-image: linear-gradient(
-        180deg,
-        #00000073 -7.14%,
-        rgba(0, 0, 0, 0.45) 95%
-      ),
-      url(images/hero.jpg);
-  }
-
-  .hero-header {
-    font-size: 2em;
-  }
-
-  .hero-para {
-    display: none;
-  }
-
   .none-mob {
     display: none;
-  }
-
-  .main-layout {
-    padding-top: 0px;
   }
 
   .disc-container {

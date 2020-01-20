@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-
-<!-- New functionality: -->
-<!-- * We need the mobile - refine results to appear - which is a mobile version
-       of the sidebar -->
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./dist/global.css" />
-    <link rel="stylesheet" href="./style-2.css" />
-
+    <link rel="stylesheet" href="../style-2.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
       rel="stylesheet"
@@ -20,142 +13,123 @@
       Best Money Transfer Services 2020 | Quick Transfers, Low Rates.
     </title>
   </head>
-
   <body>
     <header>
-      <nav class="nav">
+      <div class="nav-theme">
         <div class="container">
-          <div class="nav__wrapper">
-            <img class="nav__logo" src="./images/logo-new.png" />
+          <div class="nav-layout nav-container">
+            <img style="width:200px" src="../images/logo-new.png" />
           </div>
         </div>
-      </nav>
-      <div class="hero">
-        <div class="hero__wrapper container">
-          <div class=" side-guttering">
-            <h1 class="hero__header">Best Money Transfer Services 2020</h1>
-            <h2 class="hero__header hero__header--sub">
-              Send money home, fast
-            </h2>
-            <p class="hero__spt-txt">
-              Compare the best providers to start sending funds, today.
-            </p>
+      </div>
+      <div class="hero-container">
+        <div class="hero-background"></div>
+        <div class="hero-layout">
+          <div class="hero-layout">
+            <div class="container side-guttering">
+              <h1 class="hero-header">Best Money Transfer Services 2020</h1>
+              <h2 class="hero-header hero-header--sub">
+                Send money home, fast
+              </h2>
+              <p class="hero-para">
+                Compare the best providers to start sending funds, today.
+              </p>
+            </div>
           </div>
         </div>
+        
       </div>
     </header>
     <main>
-      <div class="filter-toggle">
-        <button id="js-filter-open" class="filter-toggle__btn">
-          Refine Results
-        </button>
-      </div>
-      <div class="disclaimer">
-        <div class="container">
-          <div class="disclaimer__theme">
-            <div class="">
-              <div class="disclaimer__wrapper">
-                <div class="disclaimer__item">
-                  <img
-                    class="disclaimer__tick span-right"
-                    src="./images/tick.png"
-                  />
-                  <span class="disclaimer__time">
-                    Last Updated
-                    <span class="disclaimer__time--bold">Jan, 2020</span></span
-                  >
-                </div>
-                <div class="disclaimer__item">
-                  <div class="disclaimer__disc">Advertising Disclosure</div>
-                </div>
+      <div class="main-max-cont">
+        <!-- <section>
+          <div class="disc-container none-tbt">
+            <div class="disc-layout">
+              <div class="disc-col-1">
+                <img class="image-tick span-right" src="../images/tick.png" />
+                <span class="disc-text-1">Last Updated</span
+                ><span class="bold"> Jan, 2020</span>
+              </div>
+              <div class="disc-col-2">
+                <span class="disc-text-2">Advertising Disclosure</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section> -->
 
-      <div class="container">
-        <div class="main main-container">
-          <section id="js-filter" class="filter filter--hidden">
-            <div class="filter__header">
-              <div class="side-guttering">
-                <div class="filter--sm">
-                  <div class="filter__header-wrapper">
-                    <button id="js-reset-btn" class="filter__destructve-btn">
-                      Reset
-                    </button>
-                    <div class="filter__title">FILTERS</div>
-                    <button id="js-cancel-btn" class="filter__destructve-btn">
-                      Cancel
-                    </button>
-                  </div>
-                </div>
-                <div class="filter--lg">
-                  <div class="filter__header-wrapper">
-                    <h3 class="filter__title">Customize Results</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="side-guttering">
-              <div>
-                <h3 class="filter__label">Transfer Purpose</h3>
-                <div class="filter__btn-cont">
-                  <button
-                    id="js-btn-1-1"
-                    class="filter__refine-btn filter__refine-btn--top filter__refine-btn--active"
-                  >
-                    Personal
-                  </button>
-                  <button
-                    id="js-btn-2-1"
-                    class="filter__refine-btn filter__refine-btn--inactive"
-                  >
-                    Business
-                  </button>
-                </div>
-                <h3 class="filter__label">Transfer Amount</h3>
-                <div class="filter__btn-cont">
-                  <button
-                    id="js-btn-1-2"
-                    class="filter__refine-btn filter__refine-btn--top filter__refine-btn--active"
-                  >
-                    £1 - £10,000
-                  </button>
-                  <button
-                    id="js-btn-2-2"
-                    class="filter__refine-btn filter__refine-btn--inactive"
-                  >
-                    £10,001+
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div>
-              <a id="js-go-link" class="filter__go-btn">
-                <div class="filter__bottom-row">
-                  <div class="side-guttering">
-                    <div class="filter--sm">Apply</div>
-                    <div
-                      id="js-reset-btn-2"
-                      class="filter--lg filter__reset-lg"
-                    >
-                      Reset
+        <div class="main-layout main-container">
+          <div class="sidebar">
+            <section>
+              <div class="card-cont sidebar-cont">
+                <div class="side-guttering">
+                  <h3 class="cust-h">Customize Results</h3>
+                  <div class="cust-list-container">
+                    <div class="cust-sub-h-cont">
+                      <span class="span-right">Transfer Purpose</span>
+                      <img
+                        src="../images/question-mark.png"
+                        class="questions-image"
+                      />
                     </div>
+
+                    <ul class="cust-list">
+                      <li class="">
+                        <a
+                          id="js-1-1"
+                          class="cust-list-a cust-list-a--top"
+                          href="../index.html"
+                          >Personal</a
+                        >
+                      </li>
+                      <li class="cust-list-li">
+                        <a id="js-1-2" class="cust-list-a cust-list-a-active" href="./business-1.html">Business</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cust-list-container">
+                    <div class="cust-sub-h-cont">
+                      <span class="span-right">Transfer Amount</span>
+                      <img
+                        src="../images/question-mark.png"
+                        class="questions-image"
+                      />
+                    </div>
+
+                    <ul class="cust-list">
+                      <li class="">
+                        <a
+                          id="js-2-1"
+                          href="./business-1.html"
+                          class="cust-list-a cust-list-a--top"
+                          >£1 - £10,000</a
+                        >
+                      </li>
+                      <li class="cust-list-li">
+                        <a id="js-2-2" class="cust-list-a cust-list-a-active" href="./business-10.html">£10,001+</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="reset-filter">
+                    <a
+                      class="reset-filter-a"
+                      onclick="location.reload();"
+                      href="../index.html"
+                      >Reset Filter</a
+                    >
                   </div>
                 </div>
-              </a>
-            </div>
-          </section>
+              </div>
+            </section>
+          </div>
 
-          <section class="partners">
-            <div id="js-partner-1" class="card-cont card-cont--ptr">
+          <section style="flex:1">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-1-number">1</span>
+                        <span>1</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -168,31 +142,29 @@
                       </div>
                     </div>
                     <div class="col-1-row-2">
-                      <img class="ptr-logo" src="./images/logos/xe.jpg" />
+                      <img class="ptr-logo" src="../images/logos/xe.jpg" />
 
                       <img
-                        src="./images/stars/4-half.png"
+                        src="../images/stars/4-half.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">30,000 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
                     </div>
                   </div>
-                  <div flex="1">
                   <a href="#" class="read-more-btn--light display-mob">
                     Visit Site
                   </a>
                 </div>
-                </div>
                 <div class="card-col-2">
                   <div class="col-2-row-1 none-mob">
                     <h3 class="span-right">XE</h3>
-                    <img class="trophy-image" src="./images/stars/trohpy.png" />
+                    <img class="trophy-image" src="../images/stars/trohpy.png" />
                   </div>
                   <div style="margin-top: 10px" class="display-mob">
                     <div class="ptr-number-text ">
@@ -209,7 +181,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       No fees, competitive exchange rates
@@ -217,7 +189,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: none
@@ -225,7 +197,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: Same day
@@ -235,19 +207,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-2" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-2-number">2</span>
+                        <span>2</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -258,17 +230,17 @@
                     <div class="col-1-row-2">
                       <img
                         class="ptr-logo"
-                        src="./images/logos/currencyfair.jpg"
+                        src="../images/logos/currencyfair.jpg"
                       />
 
                       <img
-                        src="./images/stars/5.png"
+                        src="../images/stars/5.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">3,704 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -290,7 +262,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Low fees, competitive exchange rates
@@ -298,7 +270,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: none
@@ -306,7 +278,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: same day
@@ -316,19 +288,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-3" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-3-number">3</span>
+                        <span>3</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -337,13 +309,13 @@
                       </div>
                     </div>
                     <div class="col-1-row-2">
-                      <img class="ptr-logo" src="./images/logos/amizo.jpg" />
+                      <img class="ptr-logo" src="../images/logos/amizo.jpg" />
 
                       <div class="none-mob">
                         <p>No Reviews yet</p>
                         On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -365,7 +337,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: £10
@@ -373,7 +345,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: none
@@ -381,7 +353,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: 30 minutes or less
@@ -391,19 +363,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-4" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-4-number">4</span>
+                        <span>4</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -414,17 +386,17 @@
                     <div class="col-1-row-2">
                       <img
                         class="ptr-logo"
-                        src="./images/logos/worldremit.jpg"
+                        src="../images/logos/worldremit.jpg"
                       />
 
                       <img
-                        src="./images/stars/4-half.png"
+                        src="../images/stars/4-half.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">33,786 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -446,7 +418,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Low fees and exchange rates
@@ -454,7 +426,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: none
@@ -462,7 +434,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: instant - 3 business days
@@ -472,19 +444,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-5" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-5-number">5</span>
+                        <span>5</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -493,16 +465,16 @@
                       </div>
                     </div>
                     <div class="col-1-row-2">
-                      <img class="ptr-logo" src="./images/logos/hifx.jpg" />
+                      <img class="ptr-logo" src="../images/logos/hifx.jpg" />
 
                       <img
-                        src="./images/stars/4-half.png"
+                        src="../images/stars/4-half.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">34,389 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -524,7 +496,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       No Fees
@@ -532,7 +504,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: £250
@@ -540,7 +512,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: up to 4 days
@@ -550,19 +522,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-6" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-6-number">6</span>
+                        <span>6</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -571,16 +543,16 @@
                       </div>
                     </div>
                     <div class="col-1-row-2">
-                      <img class="ptr-logo" src="./images/logos/paysend.jpg" />
+                      <img class="ptr-logo" src="../images/logos/paysend.jpg" />
 
                       <img
-                        src="./images/stars/4-half.png"
+                        src="../images/stars/4-half.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">6,791 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -602,7 +574,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Fixed fees - only £1.00
@@ -610,7 +582,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: £2.81
@@ -618,7 +590,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: instant - 3 business days
@@ -628,19 +600,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-7" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-7-number">7</span>
+                        <span>7</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -651,17 +623,17 @@
                     <div class="col-1-row-2">
                       <img
                         class="ptr-logo"
-                        src="./images/logos/transfergo.jpg"
+                        src="../images/logos/transfergo.jpg"
                       />
 
                       <img
-                        src="./images/stars/5.png"
+                        src="../images/stars/5.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">13,538 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -683,7 +655,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transaction fee from £0.99
@@ -691,7 +663,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: none
@@ -699,7 +671,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: 30 minutes - 3 days
@@ -709,19 +681,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-8" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-8-number">8</span>
+                        <span>8</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -732,17 +704,17 @@
                     <div class="col-1-row-2">
                       <img
                         class="ptr-logo"
-                        src="./images/logos/transferwise.jpg"
+                        src="../images/logos/transferwise.jpg"
                       />
 
                       <img
-                        src="./images/stars/4-half.png"
+                        src="../images/stars/4-half.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">13,538 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -764,7 +736,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Low transaction fees
@@ -772,7 +744,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: none
@@ -780,7 +752,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: few hours - 2 days
@@ -790,19 +762,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-9" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-9-number">9</span>
+                        <span>9</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -811,16 +783,16 @@
                       </div>
                     </div>
                     <div class="col-1-row-2">
-                      <img class="ptr-logo" src="./images/logos/ofx.jpg" />
+                      <img class="ptr-logo" src="../images/logos/ofx.jpg" />
 
                       <img
-                        src="./images/stars/4-half.png"
+                        src="../images/stars/4-half.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">3,747 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -842,7 +814,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Great exchange rates for sending money abroad
@@ -850,7 +822,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Minimum transfer: £100
@@ -858,7 +830,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: Transfer time: same day - 2 days
@@ -868,19 +840,19 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div id="js-partner-10" class="card-cont card-cont--ptr">
+            <div class="card-cont card-cont--ptr">
               <div class="card-layout">
                 <div class="card-col-1">
                   <div class="card-col-row-1-mob">
                     <div class="col-1-row-1 pos-relative">
                       <div class="ptr-number">
-                        <span id="js-ptr-10-number">10</span>
+                        <span>10</span>
                       </div>
                       <div class="pos-relative">
                         <div class="triangle-container">
@@ -891,17 +863,17 @@
                     <div class="col-1-row-2">
                       <img
                         class="ptr-logo"
-                        src="./images/logos/moneygram.jpg"
+                        src="../images/logos/moneygram.jpg"
                       />
 
                       <img
-                        src="./images/stars/1-half.png"
+                        src="../images/stars/1-half.png"
                         class="ptr-stars none-mob"
                       />
                       <div class="none-mob">
                         <span class="bold">64 </span>Reviews On
                         <img
-                          src="./images/stars/stand-alone.png"
+                          src="../images/stars/stand-alone.png"
                           class="ptr-star-stand-alone"
                         /><span class="bold"> TrustPilot</span>
                       </div>
@@ -923,7 +895,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Fee: varies by amount and country
@@ -931,7 +903,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Transfer time: instant - next day
@@ -939,7 +911,7 @@
                     <li class="ptr-list-item">
                       <img
                         class="image-tick-green span-right"
-                        src="./images/tick-green.png"
+                        src="../images/tick-green.png"
                       />
 
                       Daily limit: £6,000
@@ -949,14 +921,13 @@
                 <div class="card-col-3">
                   <a href="#" class="read-more-btn bold none-mob">
                     VISIT SITE
-                    <img class="visit-image" src="./images/padlock.png" />
+                    <img class="visit-image" src="../images/padlock.png" />
                   </a>
                 </div>
               </div>
             </div>
           </section>
         </div>
-
         <div class="wysywig">
           <section>
             <h2>Online Money Transfer</h2>
@@ -1263,58 +1234,16 @@
             </p>
           </section>
         </div>
-
-        <section>
-          <div class="accordian">
-            <div class="container container--accordian">
-              <h2 class="accordian__header">Frequently Asked Questions</h2>
-              <button data-open class="accordian__open-btn">
-                <div>Open Me</div>
-                <div class="accordian__plus">+</div>
-              </button>
-              <p class="accordian__text accordian__text--hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                magni, quis laborum unde praesentium nostrum cum nisi similique?
-                Aut quae dolor suscipit veritatis ab reiciendis qui tempore
-                perferendis aspernatur molestias.
-              </p>
-              <button
-                data-open
-                class="accordian__open-btn accordian__open-btn--spaced"
-              >
-                <div>Open Me</div>
-                <div class="accordian__plus">+</div>
-              </button>
-              <p class="accordian__text accordian__text--hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                magni, quis laborum unde praesentium nostrum cum nisi similique?
-                Aut quae dolor suscipit veritatis ab reiciendis qui tempore
-                perferendis aspernatur molestias.
-              </p>
-              <button data-open class="accordian__open-btn">
-                <div>Open Me</div>
-                <div class="accordian__plus">+</div>
-              </button>
-              <p class="accordian__text accordian__text--hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                magni, quis laborum unde praesentium nostrum cum nisi similique?
-                Aut quae dolor suscipit veritatis ab reiciendis qui tempore
-                perferendis aspernatur molestias.
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
-
     <footer>
       <div class="footer-theme footer-container main-container">
-        <div class="container">
+        <div class="main-max-cont">
           <div class="side-guttering footer-layout">
             <div class="footer-col-1">
               <img
                 class="footer-logo footer-row"
-                src="./images/logo-new-white.png"
+                src="../images/logo-new-white.png"
               />
               <p class="footer-row">
                 Copyright © 2009-2020 Natural Intelligence Ltd. All Rights
@@ -1344,7 +1273,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/accordian.js"></script>
-    <script src="./js/filters.js"></script>
+    <!-- <script src="./script.js"></script> -->
   </body>
 </html>

@@ -1,0 +1,70 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.main-container p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.side-guttering {
+  padding: 0 23px;
+}
+
+.display-mob {
+  display: none;
+}
+
+.span-right {
+  margin-right: 5px;
+}
+
+.main-max-cont {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+}
+
+@media only screen and (max-width: 425px) {
+  .display-mob {
+    display: flex;
+    overflow: hidden;
+  }
+}
+
+/*# sourceMappingURL=generic.css.map */
