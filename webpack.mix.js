@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+let mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,10 +11,17 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('style/sass/global.scss', 'dist/')
+mix
+  .sass("assets/scss/global.scss", "dist/")
+  .js("assets/js/global.js", "dist/")
+  .browserSync({
+    files: ["./assets/**/*.scss", "./assets/**/*.js"],
+    proxy: "https://top10bestmoneytransfer.test" 
+  })
   .options({
     processCssUrls: false
   });
+
 
 // Full API
 // mix.js(src, output);
