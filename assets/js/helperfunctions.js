@@ -72,16 +72,3 @@ const createPartnerHTML = data => {
   </div>
   </div>`;
 };
-
-const createPartnerHTML2 = data => {
-  return `
- <p>${data.name}<p>
- <p>${data.logo}<p>
- <p>${data.stars}<p>
- <p>${data.reviewquantity}<p>
- <p>${data.maintagline}<p>
- <p>${data.keyfeatures}<p>
- <p>${data.url}<p>
- <p>${data.order}<p>
- `;
-};

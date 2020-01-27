@@ -54,6 +54,11 @@ img {
   flex-direction: row;
 }
 
+button {
+  outline: none !important;
+}
+
+
 @media only screen and (max-width: 768px) {
 }
 

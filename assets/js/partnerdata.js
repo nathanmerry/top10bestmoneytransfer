@@ -13,7 +13,7 @@ const data = [
       three: "Transfer time: Same day"
     },
     order: 1,
-    tagline: "display: block;",
+    tagline: "display: block",
     partnerlink: "https://www.xe.com/",
     id: "zWLVb8d0uVh9dRTFWrL4",
     encodePartnerLink: function() {
@@ -235,3 +235,4 @@ const data = [
     }
   }
 ];
+

@@ -2,8 +2,7 @@
   display: block;
   text-align: center;
   box-shadow: 0 -17px 25px rgba(0, 0, 0, 0.34);
-  margin-bottom: $gutter/2;
-
+  
   @include respond-to("medium") {
     display: none;
   }

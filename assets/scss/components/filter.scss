@@ -5,15 +5,13 @@
   z-index: 99;
   width: 100%;
   height: 100%;
-  padding: 0 $gutter;
   transition: opacity 0.2s, transform 0.2s;
   background: $white;
 
-
   @include respond-to("medium") {
     position: relative;
-    margin-right: 20px;
     width: 33%;
+    margin-right: 20px;
   }
 
   &--visible {
@@ -34,22 +32,17 @@
     }
   }
 
-  // @include respond-to("medium") {
-  //   visibility: hidden;
-  // }
-
   &__header {
     font-weight: lighter;
     font-size: 14px;
     border-bottom: 2px solid #d5d5d5;
     background-color: #f0f1f2;
-    padding-top: $gutter;
-    padding-bottom: $gutter;
+    padding: $gutter;
 
     @include respond-to("medium") {
       font-size: 12px;
       border: none;
-      padding-bottom: 0;
+      padding: $gutter $gutter 0 $gutter;
       background-color: $white;
     }
   }
@@ -66,7 +59,6 @@
   &__title {
     font-size: 1.2em;
     font-weight: 500;
-  
 
     @include respond-to("medium") {
       font-weight: 400;
@@ -85,11 +77,8 @@
     background: none;
   }
 
-  &__body-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  &__body {
+    padding: 0 $gutter;
   }
 
   &__label {
@@ -132,14 +121,17 @@
     }
   }
 
-  &__bottom-row {
+  &__go-btn {
     position: absolute;
     bottom: 0;
+    width: 100%;
     padding: $gutter 0;
-    background: $blue;
-    color: $white;
-    width: 90%;
     text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    background: $blue;
+    color: $white !important;
 
     @include respond-to("medium") {
       background: none;
@@ -151,13 +143,11 @@
     }
   }
 
-  &__go-btn {
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: 500;
-  }
-
   &__reset-lg {
+    padding: 20px;
+    text-align: right;
+    font-size: 1.1em;
+
     &:hover {
       cursor: pointer;
     }

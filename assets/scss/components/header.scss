@@ -36,16 +36,27 @@
   }
 
   &__header {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.8rem;
+    margin-bottom: $gutter / 4;
   }
 
   &__sub-header {
     display: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    @include respond-to("medium") {
+      display: block;
+    }
+  }
+
+  &__header-tagline {
+    display: none;
     margin: 1rem 0;
 
-    @include respond-to("small") {
-      display: none;
+    @include respond-to("medium") {
+      display: block;
     }
   }
 }

@@ -1,0 +1,28 @@
+.wysywig {
+  padding-bottom: 3.5em;
+
+  h2 {
+    font-size: 2em;
+    padding: ($gutter * 2) 0 ($gutter / 2) 0;
+  }
+
+  p {
+    margin: 1.5rem 0;
+    line-height: 1.8em;
+  }
+
+  a {
+    color: #50c256;
+    text-decoration: none;
+  }
+
+  hr {
+    margin-top: 75px;
+    margin-bottom: 35px;
+    border: 1px solid #0000000f;
+  }
+  
+  h3 {
+    font-size: 1.3em;
+  }
+}

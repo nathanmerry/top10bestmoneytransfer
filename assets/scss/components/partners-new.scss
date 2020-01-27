@@ -107,6 +107,7 @@
     left: -2px;
 
     @include respond-to("small") {
+      margin: 0 5px;
       border-left: 12px solid transparent;
       border-right: 0 solid transparent;
     }
@@ -257,10 +258,12 @@
     font-size: 0.9em;
     background: #47bb4b;
     border: none;
-    color: #fff;
+    color: $white;
 
     &:hover {
+      color: $white;
       background: #3fa843;
+      text-decoration: none;
     }
 
     &--clear {

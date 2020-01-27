@@ -13,15 +13,15 @@ let mix = require("laravel-mix");
 
 mix
   .sass("assets/scss/global.scss", "dist/")
-  .js("assets/js/global.js", "dist/")
   .browserSync({
-    files: ["./assets/**/*.scss", "./assets/**/*.js"],
-    proxy: "https://top10bestmoneytransfer.test" 
+    files: ["./assets/**/*.scss"],
+    proxy: "https://top10mt.test"
   })
   .options({
     processCssUrls: false
   });
 
+mix.js("assets/js/global.js", "dist/");
 
 // Full API
 // mix.js(src, output);

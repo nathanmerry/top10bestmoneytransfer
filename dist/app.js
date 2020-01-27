@@ -84,41 +84,17 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./assets/js/global.js":
-/*!*****************************!*\
-  !*** ./assets/js/global.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// import tracking from './components/tracking.js';
-
-/***/ }),
-
-/***/ "./assets/scss/global.scss":
-/*!*********************************!*\
-  !*** ./assets/scss/global.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./assets/js/global.js ./assets/scss/global.scss ***!
-  \*************************************************************/
+/******/ ([
+/* 0 */
+/*!*****************************************!*\
+  !*** multi ./src/app.js ./src/app.scss ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/nathanmerry/Sites/top10bmt/assets/js/global.js */"./assets/js/global.js");
-module.exports = __webpack_require__(/*! /Users/nathanmerry/Sites/top10bmt/assets/scss/global.scss */"./assets/scss/global.scss");
+!(function webpackMissingModule() { var e = new Error("Cannot find module '/Users/nathanmerry/Sites/top10bmt/src/app.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '/Users/nathanmerry/Sites/top10bmt/src/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 /***/ })
-
-/******/ });
+/******/ ]);

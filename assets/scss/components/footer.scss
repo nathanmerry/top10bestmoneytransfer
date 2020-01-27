@@ -1,0 +1,16 @@
+.footer {
+  font-size: 0.9em;
+  background-image: linear-gradient(to right, #2f91c1, #2bbd7e);
+  color: #fff;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-width: 250px;
+    margin: $gutter 0;
+  }
+}

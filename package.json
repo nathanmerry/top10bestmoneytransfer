@@ -1,7 +1,6 @@
 {
   "name": "top10bestmoneytransfers",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",
@@ -31,5 +30,9 @@
   },
   "dependencies": {
     "ua-parser-js": "^0.7.21"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/nathanmerry/top10bestmoneytransfer/issues"
+  },
+  "description": ""
 }
