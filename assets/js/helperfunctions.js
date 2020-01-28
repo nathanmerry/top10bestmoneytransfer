@@ -45,7 +45,7 @@ const createPartnerHTML = data => {
       </div>
       <div class="partner__name-wrapper">
         <h3 class="partner__name">${data.name}</h3>
-        <img class="partner__trophy" src="./images/stars/trohpy.png" />
+        <img style="${data.trohpy}" class="partner__trophy" src="./images/stars/trohpy.png" />
       </div>
       <div class="partner__tagline">${data.maintagline}</div>
       <ul class="partner__key-features">
@@ -72,3 +72,5 @@ const createPartnerHTML = data => {
   </div>
   </div>`;
 };
+
+console.log('hello')

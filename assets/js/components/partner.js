@@ -16,6 +16,8 @@ const resetBtns = [
   document.getElementById("js-reset-btn-2")
 ];
 
+console.log(resetBtns)
+
 const cancelBtn = document.getElementById("js-cancel-btn");
 const filterBlock = document.getElementById("js-filter");
 const openFilterBtn = document.getElementById("js-filter-open");
@@ -164,6 +166,7 @@ resetBtns.forEach(btn => {
     switchClass(filterBtn2, styleInactive, styleActive);
     switchClass(filterBtn3, styleActive, styleInactive);
     switchClass(filterBtn4, styleInactive, styleActive);
+    switchClass(filterBlock, "filter--hidden", "filter--visible");
     btnCond1 = true;
     btnCond3 = true;
     btnCond2 = false;
@@ -179,4 +182,8 @@ goLink.addEventListener("click", () => {
 
 openFilterBtn.addEventListener("click", () => {
   switchClass(filterBlock, "filter--visible", "filter--hidden");
+});
+
+cancelBtn.addEventListener("click", () => {
+  switchClass(filterBlock, "filter--hidden", "filter--visible");
 });

@@ -14,6 +14,7 @@ const data = [
     },
     order: 1,
     tagline: "display: block",
+    trohpy: "display: block",
     partnerlink: "https://www.xe.com/",
     id: "zWLVb8d0uVh9dRTFWrL4",
     encodePartnerLink: function() {
@@ -39,6 +40,7 @@ const data = [
     url: "www.google.com",
     order: 2,
     tagline: "none",
+    trohpy: "display: none",
     partnerlink: "https://www.currencyfair.com/",
     id: "ofhSa2xJ0RnVLHdbm1sJ",
     encodePartnerLink: function() {
@@ -63,6 +65,7 @@ const data = [
     },
     order: 3,
     tagline: "none",
+    trohpy: "display: none",
     partnerlink: "https://azimo.com/en",
     id: "uVvcMl5Cg2YyCkhREzt3",
     encodePartnerLink: function() {
@@ -87,6 +90,7 @@ const data = [
     },
     order: 4,
     tagline: "none",
+    trohpy: "display: none",
     id: "CATZKxZesY1ohk3aAjcQ",
     partnerlink: "https://www.worldremit.com/",
     encodePartnerLink: function() {
@@ -111,6 +115,7 @@ const data = [
     },
     order: 5,
     tagline: "none",
+    trohpy: "display: none",
     partnerlink: "https://www.hifx.co.uk/",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
@@ -132,6 +137,7 @@ const data = [
     },
     order: 6,
     tagline: "none",
+    trohpy: "display: none",
     partnerlink: "https://paysend.com/",
     id: "bqhjibRAu0EcFcdsyn9E",
     encodePartnerLink: function() {
@@ -157,6 +163,7 @@ const data = [
     url: "www.google.com",
     order: 7,
     tagline: "none",
+    trohpy: "display: none",
     partnerlink: "https://www.transfergo.com/en",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
@@ -178,6 +185,7 @@ const data = [
     },
     order: 8,
     tagline: "none",
+    trohpy: "display: none",
     partnerlink: "https://transferwise.com/",
     id: "mRL82pTyUlToDkDXpgJA",
     encodePartnerLink: function() {
@@ -202,6 +210,7 @@ const data = [
     },
     order: 9,
     tagline: "none",
+    trohpy: "display: none",
     id: "LKv6TK3CHzD5zctsekgH",
     partnerlink: "https://www.ofx.com/en-gb/",
     encodePartnerLink: function() {
@@ -226,6 +235,7 @@ const data = [
     },
     order: 10,
     tagline: "none",
+    trohpy: "display: none",
     partnerlink: "https://www.moneygram.com/mgo/gb/en/",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
