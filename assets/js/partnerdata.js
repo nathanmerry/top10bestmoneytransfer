@@ -9,7 +9,7 @@ const data = [
     maintagline: "Direct transfer from your bank account",
     keyfeatures: {
       one: "No fees, competitive exchange rates",
-      two: "Minimum transfer: none",
+      two: "Minimum transfer: None",
       three: "Transfer time: Same day"
     },
     order: 1,
@@ -56,11 +56,11 @@ const data = [
     name: "Azimo",
     logo: "./images/logos/amizo.jpg",
     stars: "",
-    reviewquantity: "No reviews yets <br>",
+    reviewquantity: "No reviews yet <br>",
     maintagline: "First 2 international transfers are free",
     keyfeatures: {
       one: "Minimum transfer: £10",
-      two: "Minimum transfer: none",
+      two: "Minimum transfer: None",
       three: "Transfer time: 30 minutes or less"
     },
     order: 3,
@@ -85,8 +85,8 @@ const data = [
     maintagline: "Transfer money to 145+ countries",
     keyfeatures: {
       one: "Low fees and exchange rates",
-      two: "Minimum transfer: none",
-      three: "Transfer time: instant - 3 business days"
+      two: "Minimum transfer: None",
+      three: "Transfer time: Instant - 3 business days"
     },
     order: 4,
     tagline: "none",
@@ -111,7 +111,7 @@ const data = [
     keyfeatures: {
       one: "No Fees",
       two: "Minimum transfer: £250",
-      three: "Transfer time: up to 4 days"
+      three: "Transfer time: Up to 4 days"
     },
     order: 5,
     tagline: "none",
@@ -133,7 +133,7 @@ const data = [
     keyfeatures: {
       one: "Fixed fees - only £1.00",
       two: "Minimum transfer: £2.81",
-      three: "Transfer time: instant - 3 business days"
+      three: "Transfer time: Instant - 3 business days"
     },
     order: 6,
     tagline: "none",
@@ -157,7 +157,7 @@ const data = [
     maintagline: "Save up to 90% on international transfers",
     keyfeatures: {
       one: "Transaction fee from £0.99",
-      two: "Minimum transfer: none",
+      two: "Minimum transfer: None",
       three: "Transfer time: 30 minutes - 3 days"
     },
     url: "www.google.com",
@@ -180,8 +180,8 @@ const data = [
     maintagline: "Low fees, mid-market exchange rates",
     keyfeatures: {
       one: "Low transaction fees",
-      two: "Minimum transfer: none",
-      three: "Transfer time: few hours - 2 days"
+      two: "Minimum transfer: None",
+      three: "Transfer time: Few hours - 2 days"
     },
     order: 8,
     tagline: "none",
@@ -229,8 +229,8 @@ const data = [
     reviewquantity: "64",
     maintagline: "Send money to banks around the world",
     keyfeatures: {
-      one: "Fee: varies by amount and country",
-      two: "Transfer time: instant - next day",
+      one: "Fee: Varies by amount and country",
+      two: "Transfer time: Instant - next day",
       three: "Daily limit: £6,000"
     },
     order: 10,

@@ -19,7 +19,17 @@
   color: #fff;
   width: 100%;
   position: relative;
+  
+  &__container {
+    padding-left: 0px ;
+    padding-right: 0px;
 
+    @include respond-to("medium") {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  
   &__wrapper {
     height: 170px;
     display: flex;
