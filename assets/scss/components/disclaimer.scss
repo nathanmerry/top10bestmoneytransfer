@@ -28,13 +28,21 @@
   &__time {
     font-size: 0.8em;
 
+    @include respond-to('xsmall') {
+      font-size: 0.9em;
+    }
+
     &--bold {
       font-weight: 700;
     }
   }
 
   &__disc {
-    font-size: 0.9em;
+      font-size: 0.7em;
+
+    @include respond-to('xsmall') {
+      font-size: 0.7em;
+    }
   }
 
   &__tick {

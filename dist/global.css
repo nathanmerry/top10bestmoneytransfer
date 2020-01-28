@@ -276,11 +276,21 @@ button {
 .disclaimer__time {
   font-size: 0.8em;
 }
+@media (min-width: 576px) {
+  .disclaimer__time {
+    font-size: 0.9em;
+  }
+}
 .disclaimer__time--bold {
   font-weight: 700;
 }
 .disclaimer__disc {
-  font-size: 0.9em;
+  font-size: 0.8em;
+}
+@media (min-width: 576px) {
+  .disclaimer__disc {
+    font-size: 0.9em;
+  }
 }
 .disclaimer__tick {
   width: 15px;
