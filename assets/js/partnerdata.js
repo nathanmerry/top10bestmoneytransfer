@@ -20,14 +20,10 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return `https://go-dot-moneytransfers-staging.appspot.com/${
-        this.id
-      }?t=${encodedPartnerJsonObject}&l=${this.encodePartnerLink()}`;
-    }
+    url: "https://www.awin1.com/cread.php?awinmid=12673&awinaffid=590963&clickref=[tracking_ref]"
   },
   {
-    name: "Currency Fair",
+    name: "CurrencyFair",
     logo: "./images/logos/currencyfair.jpg",
     stars: "./images/stars/5.png",
     reviewquantity: "3,704",
@@ -46,11 +42,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return `https://go-dot-moneytransfers-staging.appspot.com/${
-        this.id
-      }?t=${encodedPartnerJsonObject}&l=${this.encodePartnerLink()}`;
-    }
+    url: "https://currencyfair.g6ww.net/c/1401712/708874/5170?subId1=[tracking_ref]&sharedid=RMNEK1"
   },
   {
     name: "Azimo",
@@ -71,14 +63,10 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return `https://go-dot-moneytransfers-staging.appspot.com/${
-        this.id
-      }?t=${encodedPartnerJsonObject}&l=${this.encodePartnerLink()}`;
-    }
+    url: "https://prf.hn/click/camref:1100l5dqd/pubref:[tracking_ref]/destination:https%3A%2F%2Fazimo.com%2Fen%2Fngk%2Fauth%2Fsign-up%2Femail"
   },
   {
-    name: "World Remit",
+    name: "WorldRemit",
     logo: "./images/logos/worldremit.jpg",
     stars: "./images/stars/4-half.png",
     reviewquantity: "33,786",
@@ -96,11 +84,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return `https://go-dot-moneytransfers-staging.appspot.com/${
-        this.id
-      }?t=${encodedPartnerJsonObject}&l=${this.encodePartnerLink()}`;
-    }
+    url: "https://www.awin1.com/cread.php?awinmid=5877&awinaffid=590963&clickref=[tracking_ref]&p=https%3A%2F%2Fwww.worldremit.com%2Fen%2Faccount%2Fsignup"
   },
   {
     name: "HiFX",
@@ -120,9 +104,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return this.partnerlink;
-    }
+    url: "https://www.awin1.com/cread.php?awinmid=12673&awinaffid=590963&clickref=[tracking_ref]"
   },
   {
     name: "Paysend",
@@ -143,11 +125,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return `https://go-dot-moneytransfers-staging.appspot.com/${
-        this.id
-      }?t=${encodedPartnerJsonObject}&l=${this.encodePartnerLink()}`;
-    }
+    url: "https://paysend.com/?utm_source=moneytransfers&utm_medium=cpa&utm_campaign=MT&utm_content=[tracking_ref]"
   },
   {
     name: "TransferGo",
@@ -168,9 +146,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return this.partnerlink;
-    }
+    url: "https://www.transfergo.com/"
   },
   {
     name: "TransferWise",
@@ -191,11 +167,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return `https://go-dot-moneytransfers-staging.appspot.com/${
-        this.id
-      }?t=${encodedPartnerJsonObject}&l=${this.encodePartnerLink()}`;
-    }
+    url: "https://prf.hn/click/camref:1101l7yuC/pubref:[tracking_ref]/destination:https%3A%2F%2Ftransferwise.com%2Fregister"
   },
   {
     name: "OFX",
@@ -216,11 +188,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return `https://go-dot-moneytransfers-staging.appspot.com/${
-        this.id
-      }?t=${encodedPartnerJsonObject}&l=${this.encodePartnerLink()}`;
-    }
+    url: "https://www.ofx.com/en-gb/p/gb/money-transfers-com/?PID=12871"
   },
   {
     name: "MoneyGram",
@@ -240,9 +208,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: function() {
-      return this.partnerlink;
-    }
+    url: "https://www.moneygram.com"
   }
 ];
 
