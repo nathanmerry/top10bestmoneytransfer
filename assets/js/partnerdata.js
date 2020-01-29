@@ -5,7 +5,7 @@ const data = [
     name: "XE",
     logo: "./images/logos/xe.jpg",
     stars: "./images/stars/4-half.png",
-    reviewquantity: "30,000",
+    reviewquantity: "34,970",
     maintagline: "Direct transfer from your bank account",
     keyfeatures: {
       one: "No fees, competitive exchange rates",
@@ -26,7 +26,7 @@ const data = [
     name: "CurrencyFair",
     logo: "./images/logos/currencyfair.jpg",
     stars: "./images/stars/5.png",
-    reviewquantity: "3,704",
+    reviewquantity: "3,754",
     maintagline: "DiGet 10 free transfers with signup",
     keyfeatures: {
       one: "Low fees, competitive exchange rates",
@@ -47,8 +47,8 @@ const data = [
   {
     name: "Azimo",
     logo: "./images/logos/amizo.jpg",
-    stars: "",
-    reviewquantity: "No reviews yet <br>",
+    stars: "./images/stars/4-half.png",
+    reviewquantity: "34,265",
     maintagline: "First 2 international transfers are free",
     keyfeatures: {
       one: "Minimum transfer: £10",
@@ -69,7 +69,7 @@ const data = [
     name: "WorldRemit",
     logo: "./images/logos/worldremit.jpg",
     stars: "./images/stars/4-half.png",
-    reviewquantity: "33,786",
+    reviewquantity: "34,450",
     maintagline: "Transfer money to 145+ countries",
     keyfeatures: {
       one: "Low fees and exchange rates",
@@ -110,7 +110,7 @@ const data = [
     name: "Paysend",
     logo: "./images/logos/paysend.jpg",
     stars: "./images/stars/4-half.png",
-    reviewquantity: "6,791",
+    reviewquantity: "7,233",
     maintagline: "Special promo code: 'TOP10BEST'",
     keyfeatures: {
       one: "Fixed fees - only £1.00",
@@ -131,7 +131,7 @@ const data = [
     name: "TransferGo",
     logo: "./images/logos/transfergo.jpg",
     stars: "./images/stars/5.png",
-    reviewquantity: "13,538",
+    reviewquantity: "13,816",
     maintagline: "Save up to 90% on international transfers",
     keyfeatures: {
       one: "Transaction fee from £0.99",
@@ -194,7 +194,7 @@ const data = [
     name: "MoneyGram",
     logo: "./images/logos/moneygram.jpg",
     stars: "./images/stars/1-half.png",
-    reviewquantity: "64",
+    reviewquantity: "70",
     maintagline: "Send money to banks around the world",
     keyfeatures: {
       one: "Fee: Varies by amount and country",
