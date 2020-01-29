@@ -29,7 +29,13 @@ const createPartnerHTML = data => {
           </div>
         </div>
       <div class="partner__display-sm partner__visit-btn-wrapper">
-        <a href="${data.url()}" class="partner__visit-btn--clear partner__visit-btn">
+      <a href="${data.url}" class="partner__visit-btn--clear partner__visit-btn" 
+        data-mt-click="data-mt-click" 
+        data-mt-click-location="comparisonTable" 
+        data-mt-click-element="cta" 
+        data-mt-provider-id="${data.id}" 
+        data-mt-provider-name="${data.name}" 
+        data-mt-link-inject="true">
           VISIT SITE
         </a>
       </div>
@@ -64,7 +70,13 @@ const createPartnerHTML = data => {
       </ul>
     </div>
     <div class="partner__column-3">
-      <a href="${data.url()}" class="partner__visit-btn">
+      <a href="${data.url}" class="partner__visit-btn" 
+        data-mt-click="data-mt-click" 
+        data-mt-click-location="comparisonTable" 
+        data-mt-click-element="cta" 
+        data-mt-provider-id="${data.id}" 
+        data-mt-provider-name="${data.name}" 
+        data-mt-link-inject="true">
         VISIT SITE
         <img class="partner__lock-img" src="./images/padlock.png" />
       </a>
