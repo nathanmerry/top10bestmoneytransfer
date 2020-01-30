@@ -59,6 +59,8 @@ const renderPartners = data => {
   }
 };
 
+console.log(renderPartners);
+
 const partnerOrder1 = () => {
   data[0].order = 1;
   data[1].order = 2;
