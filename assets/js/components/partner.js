@@ -16,8 +16,6 @@ const resetBtns = [
   document.getElementById("js-reset-btn-2")
 ];
 
-console.log(resetBtns)
-
 const cancelBtn = document.getElementById("js-cancel-btn");
 const filterBlock = document.getElementById("js-filter");
 const openFilterBtn = document.getElementById("js-filter-open");
@@ -52,82 +50,99 @@ if (filterBtn3.classList.contains(styleActive)) {
 const renderPartners = data => {
   document.getElementById("partners").innerHTML = "";
   for (index = 0; index < 10; index++) {
+    // renders the partners
     let partnerInfo = data[index];
-    calculateOrder();
     let partnerHTML = createPartnerHTML(partnerInfo);
     $(".partners").append(partnerHTML);
   }
 };
 
-console.log(renderPartners);
+renderPartners(data);
 
-const partnerOrder1 = () => {
-  data[0].order = 1;
-  data[1].order = 2;
-  data[2].order = 3;
-  data[3].order = 4;
-  data[4].order = 5;
-  data[5].order = 6;
-  data[6].order = 7;
-  data[7].order = 8;
-  data[8].order = 9;
-  data[9].order = 10;
-};
+const partnerOrder1 = (partners, partnerOrders) => {
+  partners[0].style = "order: 1";
+  partners[1].style = "order: 2";
+  partners[2].style = "order: 3";
+  partners[3].style = "order: 4";
+  partners[4].style = "order: 5";
+  partners[5].style = "order: 6";
+  partners[6].style = "order: 7";
+  partners[7].style = "order: 8";
+  partners[8].style = "order: 9";
+  partners[9].style = "order: 10";
 
-const partnerOrder2 = () => {
-  data[0].order = 3;
-  data[1].order = 2;
-  data[2].order = 1;
-  data[3].order = 4;
-  data[4].order = 5;
-  data[5].order = 6;
-  data[6].order = 10;
-  data[7].order = 9;
-  data[8].order = 8;
-  data[9].order = 7;
-};
-
-const partnerOrder3 = () => {
-  data[0].order = 2;
-  data[1].order = 5;
-  data[2].order = 1;
-  data[3].order = 6;
-  data[4].order = 3;
-  data[5].order = 7;
-  data[6].order = 4;
-  data[7].order = 8;
-  data[8].order = 9;
-  data[9].order = 10;
-};
-
-const partnerOrder4 = () => {
-  data[0].order = 1;
-  data[1].order = 5;
-  data[2].order = 4;
-  data[3].order = 3;
-  data[4].order = 2;
-  data[5].order = 6;
-  data[6].order = 9;
-  data[7].order = 8;
-  data[8].order = 7;
-  data[9].order = 10;
-};
-
-const calculateOrder = () => {
-  if (btnCond1 && btnCond3 === true) {
-    partnerOrder1();
-  } else if (btnCond1 && btnCond4 === true) {
-    partnerOrder2();
-  } else if (btnCond2 && btnCond3 === true) {
-    partnerOrder3();
-  } else if (btnCond2 && btnCond4 === true) {
-    partnerOrder4();
-  } else {
-    partnerOrder1();
+  for (index = 0; index < 10; index++) {
+    partnerOrders[index].innerHTML = partners[index].style.order;
   }
 };
 
-renderPartners(data);
+const partnerOrder2 = (partners, partnerOrders) => {
+  partners[0].style = "order: 3";
+  partners[1].style = "order: 2";
+  partners[2].style = "order: 1";
+  partners[3].style = "order: 4";
+  partners[4].style = "order: 5";
+  partners[5].style = "order: 6";
+  partners[6].style = "order: 10";
+  partners[7].style = "order: 9";
+  partners[8].style = "order: 8";
+  partners[9].style = "order: 7";
+
+  for (index = 0; index < 10; index++) {
+    partnerOrders[index].innerHTML = partners[index].style.order;
+  }
+};
+
+const partnerOrder3 = partners => {
+  partners[0].style = "order: 2";
+  partners[1].style = "order: 5";
+  partners[2].style = "order: 1";
+  partners[3].style = "order: 6";
+  partners[4].style = "order: 3";
+  partners[5].style = "order: 7";
+  partners[6].style = "order: 4";
+  partners[7].style = "order: 8";
+  partners[8].style = "order: 9";
+  partners[9].style = "order: 10";
+
+  for (index = 0; index < 10; index++) {
+    partnerOrders[index].innerHTML = partners[index].style.order;
+  }
+};
+
+const partnerOrder4 = partners => {
+  partners[0].style = "order:1";
+  partners[1].style = "order:5";
+  partners[2].style = "order:4";
+  partners[3].style = "order:3";
+  partners[4].style = "order:2";
+  partners[5].style = "order:6";
+  partners[6].style = "order:9";
+  partners[7].style = "order:8";
+  partners[8].style = "order:7";
+  partners[9].style = "order:10";
+
+  for (index = 0; index < 10; index++) {
+    partnerOrders[index].innerHTML = partners[index].style.order;
+  }
+};
+
+const calculateOrder = (partners, partnerOrders) => {
+  if (btnCond1 && btnCond3 === true) {
+    partnerOrder1(partners, partnerOrders);
+  } else if (btnCond1 && btnCond4 === true) {
+    partnerOrder2(partners);
+  } else if (btnCond2 && btnCond3 === true) {
+    partnerOrder3(partners);
+  } else if (btnCond2 && btnCond4 === true) {
+    partnerOrder4(partners);
+  } else {
+    partnerOrder1(partners);
+  }
+};
+
+const partnerArr = document.querySelectorAll("[data-partner]");
+const partnerOrders = document.querySelectorAll("[data-number]");
 
 // changes the stlying for each btn element onclick, changes the values for page link variable then calls function calculating page
 filterBtn1.addEventListener("click", () => {
@@ -135,7 +150,7 @@ filterBtn1.addEventListener("click", () => {
   switchClass(filterBtn2, styleInactive, styleActive);
   btnCond1 = true;
   btnCond2 = false;
-  renderPartners(data);
+  calculateOrder(partnerArr, partnerOrders);
 });
 
 filterBtn2.addEventListener("click", () => {
@@ -143,7 +158,7 @@ filterBtn2.addEventListener("click", () => {
   switchClass(filterBtn1, styleInactive, styleActive);
   btnCond2 = true;
   btnCond1 = false;
-  renderPartners(data);
+  calculateOrder(partnerArr);
 });
 
 filterBtn3.addEventListener("click", () => {
@@ -151,7 +166,7 @@ filterBtn3.addEventListener("click", () => {
   switchClass(filterBtn4, styleInactive, styleActive);
   btnCond3 = true;
   btnCond4 = false;
-  renderPartners(data);
+  calculateOrder(partnerArr);
 });
 
 filterBtn4.addEventListener("click", () => {
@@ -159,7 +174,7 @@ filterBtn4.addEventListener("click", () => {
   switchClass(filterBtn3, styleInactive, styleActive);
   btnCond4 = true;
   btnCond3 = false;
-  renderPartners(data);
+  calculateOrder(partnerArr);
 });
 
 resetBtns.forEach(btn => {
@@ -173,7 +188,7 @@ resetBtns.forEach(btn => {
     btnCond3 = true;
     btnCond2 = false;
     btnCond4 = false;
-    renderPartners(data);
+    calculateOrder(partnerArr);
   });
 });
 

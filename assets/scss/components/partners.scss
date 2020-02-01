@@ -89,11 +89,10 @@
     transform: rotate(180deg);
     border-left: 12px solid transparent;
     border-right: 0 solid transparent;
-    border-bottom: 25.5px solid #1e47ba;
-
+    border-bottom: 25px solid #1e47ba;
+    
     @include respond-to("small") {
       position: absolute;
-      border-bottom: 26.4px solid #1e47ba;
     }
   }
   &__triangle-right {

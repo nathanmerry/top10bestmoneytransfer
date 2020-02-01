@@ -276,7 +276,7 @@ button {
 .disclaimer__time {
   font-size: 0.8em;
 }
-@media (min-width: 576px) {
+@media (min-width: 321px) {
   .disclaimer__time {
     font-size: 0.9em;
   }
@@ -285,11 +285,11 @@ button {
   font-weight: 700;
 }
 .disclaimer__disc {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
-@media (min-width: 576px) {
+@media (min-width: 321px) {
   .disclaimer__disc {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 }
 .disclaimer__tick {
@@ -599,12 +599,11 @@ button {
           transform: rotate(180deg);
   border-left: 12px solid transparent;
   border-right: 0 solid transparent;
-  border-bottom: 25.5px solid #1e47ba;
+  border-bottom: 25px solid #1e47ba;
 }
 @media (min-width: 576px) {
   .partner__triangle-left {
     position: absolute;
-    border-bottom: 26.4px solid #1e47ba;
   }
 }
 .partner__triangle-right {

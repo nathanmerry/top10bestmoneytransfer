@@ -1,12 +1,12 @@
 
 
 const createPartnerHTML = data => {
-  return `<div style="order:${data.order}" class="partner">
+  return `<div data-partner class="partner">
   <div class="partner__wrapper">
     <div class="partner__column-1">
         <div class="partner__number-wrapper">
           <div class="partner__number">
-            <span>${data.order}</span>
+            <span data-number>${index + 1}</span>
           </div>
           <div class="partner__triangles">
             <div class="partner__triangle-wrapper">
@@ -29,7 +29,7 @@ const createPartnerHTML = data => {
           </div>
         </div>
       <div class="partner__display-sm partner__visit-btn-wrapper">
-      <a href="${data.url}" class="partner__visit-btn--clear partner__visit-btn" 
+      <a href="${data.url}" target="_blank" class="partner__visit-btn--clear partner__visit-btn" 
         data-mt-click="data-mt-click" 
         data-mt-click-location="comparisonTable" 
         data-mt-click-element="cta" 
@@ -70,7 +70,7 @@ const createPartnerHTML = data => {
       </ul>
     </div>
     <div class="partner__column-3">
-      <a href="${data.url}" class="partner__visit-btn" 
+      <a href="${data.url}" target="_blank" class="partner__visit-btn" 
         data-mt-click="data-mt-click" 
         data-mt-click-location="comparisonTable" 
         data-mt-click-element="cta" 
