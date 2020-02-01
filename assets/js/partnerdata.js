@@ -12,7 +12,6 @@ const data = [
       two: "Minimum transfer: None",
       three: "Transfer time: Same day"
     },
-    order: 1,
     tagline: "display: block",
     trohpy: "display: block",
     partnerlink: "https://www.xe.com/",
@@ -34,7 +33,6 @@ const data = [
       three: "Transfer time: same day"
     },
     url: "www.google.com",
-    order: 2,
     tagline: "none",
     trohpy: "display: none",
     partnerlink: "https://www.currencyfair.com/",
@@ -55,7 +53,6 @@ const data = [
       two: "Minimum transfer: None",
       three: "Transfer time: 30 minutes or less"
     },
-    order: 3,
     tagline: "none",
     trohpy: "display: none",
     partnerlink: "https://azimo.com/en",
@@ -76,7 +73,6 @@ const data = [
       two: "Minimum transfer: None",
       three: "Transfer time: Instant - 3 business days"
     },
-    order: 4,
     tagline: "none",
     trohpy: "display: none",
     id: "CATZKxZesY1ohk3aAjcQ",
@@ -97,7 +93,6 @@ const data = [
       two: "Minimum transfer: £250",
       three: "Transfer time: Up to 4 days"
     },
-    order: 5,
     tagline: "none",
     trohpy: "display: none",
     partnerlink: "https://www.hifx.co.uk/",
@@ -117,7 +112,6 @@ const data = [
       two: "Minimum transfer: £2.81",
       three: "Transfer time: Instant - 3 business days"
     },
-    order: 6,
     tagline: "none",
     trohpy: "display: none",
     partnerlink: "https://paysend.com/",
@@ -139,7 +133,6 @@ const data = [
       three: "Transfer time: 30 minutes - 3 days"
     },
     url: "www.google.com",
-    order: 7,
     tagline: "none",
     trohpy: "display: none",
     partnerlink: "https://www.transfergo.com/en",
@@ -159,7 +152,6 @@ const data = [
       two: "Minimum transfer: None",
       three: "Transfer time: Few hours - 2 days"
     },
-    order: 8,
     tagline: "none",
     trohpy: "display: none",
     partnerlink: "https://transferwise.com/",
@@ -180,7 +172,6 @@ const data = [
       two: "Minimum transfer: £100",
       three: "Transfer time: Transfer time: same day - 2 days"
     },
-    order: 9,
     tagline: "none",
     trohpy: "display: none",
     id: "LKv6TK3CHzD5zctsekgH",
@@ -201,7 +192,6 @@ const data = [
       two: "Transfer time: Instant - next day",
       three: "Daily limit: £6,000"
     },
-    order: 10,
     tagline: "none",
     trohpy: "display: none",
     partnerlink: "https://www.moneygram.com/mgo/gb/en/",
