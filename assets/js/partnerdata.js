@@ -1,7 +1,7 @@
 // const url = `https://go-dot-moneytransfers-staging.appspot.com/${providerID}?t=${encodedPartnerJsonObject}&l=${encodePartnerLink}`;
 
 const data = [
-    {
+  {
     name: "WorldRemit",
     logo: "./images/logos/worldremit.jpg",
     stars: "./images/stars/4-half.png",
@@ -39,7 +39,7 @@ const data = [
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: "https://www.awin1.com/cread.php?awinmid=12673&awinaffid=590963&clickref=[tracking_ref]"
+    url: "https://www.awin1.com/awclick.php?gid=345899&mid=12673&awinaffid=590963&linkid=2241253&clickref=[tracking_ref]"
   },
   {
     name: "CurrencyFair",

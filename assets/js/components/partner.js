@@ -131,13 +131,13 @@ const calculateOrder = (partners, partnerOrders) => {
   if (btnCond1 && btnCond3 === true) {
     partnerOrder1(partners, partnerOrders);
   } else if (btnCond1 && btnCond4 === true) {
-    partnerOrder2(partners);
+    partnerOrder2(partners, partnerOrders);
   } else if (btnCond2 && btnCond3 === true) {
-    partnerOrder3(partners);
+    partnerOrder3(partners, partnerOrders);
   } else if (btnCond2 && btnCond4 === true) {
-    partnerOrder4(partners);
+    partnerOrder4(partners, partnerOrders);
   } else {
-    partnerOrder1(partners);
+    partnerOrder1(partners, partnerOrders);
   }
 };
 
@@ -158,7 +158,7 @@ filterBtn2.addEventListener("click", () => {
   switchClass(filterBtn1, styleInactive, styleActive);
   btnCond2 = true;
   btnCond1 = false;
-  calculateOrder(partnerArr);
+  calculateOrder(partnerArr, partnerOrders);
 });
 
 filterBtn3.addEventListener("click", () => {
@@ -166,7 +166,7 @@ filterBtn3.addEventListener("click", () => {
   switchClass(filterBtn4, styleInactive, styleActive);
   btnCond3 = true;
   btnCond4 = false;
-  calculateOrder(partnerArr);
+  calculateOrder(partnerArr, partnerOrders);
 });
 
 filterBtn4.addEventListener("click", () => {
@@ -174,7 +174,7 @@ filterBtn4.addEventListener("click", () => {
   switchClass(filterBtn3, styleInactive, styleActive);
   btnCond4 = true;
   btnCond3 = false;
-  calculateOrder(partnerArr);
+  calculateOrder(partnerArr, partnerOrders);
 });
 
 resetBtns.forEach(btn => {
@@ -188,7 +188,7 @@ resetBtns.forEach(btn => {
     btnCond3 = true;
     btnCond2 = false;
     btnCond4 = false;
-    calculateOrder(partnerArr);
+    calculateOrder(partnerArr, partnerOrders);
   });
 });
 
