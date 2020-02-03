@@ -5,7 +5,7 @@ const data = [
     name: "XE",
     logo: "./images/logos/xe.jpg",
     stars: "./images/stars/4-half.png",
-    reviewquantity: "34,970",
+    reviewquantity: "30,000",
     maintagline: "Direct transfer from your bank account",
     keyfeatures: {
       one: "No fees, competitive exchange rates",
@@ -14,7 +14,7 @@ const data = [
     },
     tagline: "display: block",
     trohpy: "display: block",
-    partnerlink: "https://www.xe.com/",
+    partnerlink: "https://www.awin1.com/awclick.php?gid=345899&mid=12673&awinaffid=590963&linkid=2241253&clickref=[tracking_ref]",
     id: "zWLVb8d0uVh9dRTFWrL4",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
@@ -34,7 +34,7 @@ const data = [
     },
     tagline: "none",
     trohpy: "display: none",
-    partnerlink: "https://www.currencyfair.com/",
+    partnerlink: "https://currencyfair.g6ww.net/c/1401712/708874/5170?subId1=[tracking_ref]&sharedid=RMNEK1",
     id: "ofhSa2xJ0RnVLHdbm1sJ",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
@@ -54,7 +54,7 @@ const data = [
     },
     tagline: "none",
     trohpy: "display: none",
-    partnerlink: "https://azimo.com/en",
+    partnerlink: "https://prf.hn/click/camref:1100l5dqd/pubref:[tracking_ref]/destination:https%3A%2F%2Fazimo.com%2Fen%2Fngk%2Fauth%2Fsign-up%2Femail",
     id: "uVvcMl5Cg2YyCkhREzt3",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
@@ -75,7 +75,7 @@ const data = [
     tagline: "none",
     trohpy: "display: none",
     id: "CATZKxZesY1ohk3aAjcQ",
-    partnerlink: "https://www.worldremit.com/",
+    partnerlink: "https://www.awin1.com/cread.php?awinmid=5877&awinaffid=590963&clickref=[tracking_ref]&p=https%3A%2F%2Fwww.worldremit.com%2Fen%2Faccount%2Fsignup",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
@@ -94,11 +94,11 @@ const data = [
     },
     tagline: "none",
     trohpy: "display: none",
-    partnerlink: "https://www.hifx.co.uk/",
+    partnerlink: "https://www.awin1.com/awclick.php?gid=345899&mid=12673&awinaffid=590963&linkid=2241253&clickref=[tracking_ref]",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
     },
-    url: "https://www.awin1.com/cread.php?awinmid=12673&awinaffid=590963&clickref=[tracking_ref]"
+    url: "https://www.awin1.com/awclick.php?gid=345899&mid=12673&awinaffid=590963&linkid=2241253&clickref=[tracking_ref]"
   },
   {
     name: "Paysend",
@@ -113,7 +113,7 @@ const data = [
     },
     tagline: "none",
     trohpy: "display: none",
-    partnerlink: "https://paysend.com/",
+    partnerlink: "https://paysend.com/?utm_source=moneytransfers&utm_medium=cpa&utm_campaign=MT&utm_content=[tracking_ref]",
     id: "bqhjibRAu0EcFcdsyn9E",
     encodePartnerLink: function() {
       return btoa(this.partnerlink);
