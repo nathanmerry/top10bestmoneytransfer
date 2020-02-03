@@ -560,11 +560,11 @@ button {
   display: -webkit-box;
   display: flex;
   align-content: flex-start;
-  overflow: hidden;
   font-size: 0.8rem;
   font-weight: 700;
 }
 .partner__number {
+  position: relative;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -575,6 +575,18 @@ button {
   padding: 0 13px;
   background: #1e47ba;
   color: #fff;
+}
+.partner__number:after {
+  position: absolute;
+  content: "";
+  left: 33px;
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-left: 12px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 25px solid #1e47ba;
 }
 .partner__triangles {
   position: relative;
@@ -658,11 +670,12 @@ button {
 }
 .partner__logo {
   width: 70px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 @media (min-width: 576px) {
   .partner__logo {
     width: 150px;
+    margin-left: 0;
   }
 }
 .partner__reviews {

@@ -51,12 +51,12 @@
     position: relative;
     display: flex;
     align-content: flex-start;
-    overflow: hidden;
     font-size: 0.8rem;
     font-weight: 700;
   }
 
   &__number {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +64,18 @@
     padding: 0 13px;
     background: #1e47ba;
     color: #fff;
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: 33px;
+      width: 0;
+      height: 0;
+      transform: rotate(180deg);
+      border-left: 12px solid transparent;
+      border-right: 0 solid transparent;
+      border-bottom: 25px solid #1e47ba;
+    }
   }
 
   &__triangles {
@@ -90,7 +102,7 @@
     border-left: 12px solid transparent;
     border-right: 0 solid transparent;
     border-bottom: 25px solid #1e47ba;
-    
+
     @include respond-to("small") {
       position: absolute;
     }
@@ -142,10 +154,11 @@
 
   &__logo {
     width: 70px;
-    margin-left: $gutter / 2;
+    margin-left: $gutter;
 
     @include respond-to("small") {
       width: 150px;
+      margin-left: 0;
     }
   }
 

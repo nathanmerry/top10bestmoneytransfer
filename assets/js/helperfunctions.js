@@ -8,15 +8,7 @@ const createPartnerHTML = data => {
           <div class="partner__number">
             <span data-number>${index + 1}</span>
           </div>
-          <div class="partner__triangles">
-            <div class="partner__triangle-wrapper">
-              <div class="partner__triangle-left"></div>
-              <div style="display: ${data.tagline};" class="partner__triangle-right partner__display-lg"></div>
-            </div>
-          </div>
-          <div style="display: ${data.tagline};" class="partner__number-tagline partner__display-lg">
-            Great Value
-          </div>
+          
         </div>
         <div class="partner__logo-reviews">
           <img class="partner__logo" src="${data.logo}">
@@ -41,14 +33,6 @@ const createPartnerHTML = data => {
       </div>
     </div>
     <div class="partner__column-2">
-      <div style="display: ${data.tagline};" class="partner__great-value-sm">
-        <div class="partner__number-tagline partner__display-sm">
-          Great Value
-        </div>
-        <div class="partner__triangle-wrapper partner__display-sm">
-          <div class="partner__triangle-right"></div>
-        </div>
-      </div>
       <div class="partner__name-wrapper">
         <h3 class="partner__name">${data.name}</h3>
         <img style="${data.trohpy}" class="partner__trophy" src="./images/stars/trohpy.png" />
