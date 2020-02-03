@@ -60,10 +60,10 @@ const renderPartners = data => {
 renderPartners(data);
 
 const partnerOrder1 = (partners, partnerOrders) => {
-  partners[0].style = "order: 1";
+  partners[0].style = "order: 4";
   partners[1].style = "order: 2";
   partners[2].style = "order: 3";
-  partners[3].style = "order: 4";
+  partners[3].style = "order: 1";
   partners[4].style = "order: 5";
   partners[5].style = "order: 6";
   partners[6].style = "order: 7";
