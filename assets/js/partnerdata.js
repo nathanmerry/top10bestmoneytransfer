@@ -1,6 +1,26 @@
 // const url = `https://go-dot-moneytransfers-staging.appspot.com/${providerID}?t=${encodedPartnerJsonObject}&l=${encodePartnerLink}`;
 
 const data = [
+    {
+    name: "WorldRemit",
+    logo: "./images/logos/worldremit.jpg",
+    stars: "./images/stars/4-half.png",
+    reviewquantity: "34,450",
+    maintagline: "Transfer money to 145+ countries",
+    keyfeatures: {
+      one: "Low fees and exchange rates",
+      two: "Minimum transfer: None",
+      three: "Transfer time: Instant - 3 business days"
+    },
+    tagline: "none",
+    trohpy: "display: none",
+    id: "CATZKxZesY1ohk3aAjcQ",
+    partnerlink: "https://www.awin1.com/cread.php?awinmid=5877&awinaffid=590963&clickref=[tracking_ref]&p=https%3A%2F%2Fwww.worldremit.com%2Fen%2Faccount%2Fsignup",
+    encodePartnerLink: function() {
+      return btoa(this.partnerlink);
+    },
+    url: "https://www.awin1.com/cread.php?awinmid=5877&awinaffid=590963&clickref=[tracking_ref]&p=https%3A%2F%2Fwww.worldremit.com%2Fen%2Faccount%2Fsignup"
+  },
   {
     name: "XE",
     logo: "./images/logos/xe.jpg",
@@ -60,26 +80,6 @@ const data = [
       return btoa(this.partnerlink);
     },
     url: "https://prf.hn/click/camref:1100l5dqd/pubref:[tracking_ref]/destination:https%3A%2F%2Fazimo.com%2Fen%2Fngk%2Fauth%2Fsign-up%2Femail"
-  },
-  {
-    name: "WorldRemit",
-    logo: "./images/logos/worldremit.jpg",
-    stars: "./images/stars/4-half.png",
-    reviewquantity: "34,450",
-    maintagline: "Transfer money to 145+ countries",
-    keyfeatures: {
-      one: "Low fees and exchange rates",
-      two: "Minimum transfer: None",
-      three: "Transfer time: Instant - 3 business days"
-    },
-    tagline: "none",
-    trohpy: "display: none",
-    id: "CATZKxZesY1ohk3aAjcQ",
-    partnerlink: "https://www.awin1.com/cread.php?awinmid=5877&awinaffid=590963&clickref=[tracking_ref]&p=https%3A%2F%2Fwww.worldremit.com%2Fen%2Faccount%2Fsignup",
-    encodePartnerLink: function() {
-      return btoa(this.partnerlink);
-    },
-    url: "https://www.awin1.com/cread.php?awinmid=5877&awinaffid=590963&clickref=[tracking_ref]&p=https%3A%2F%2Fwww.worldremit.com%2Fen%2Faccount%2Fsignup"
   },
   {
     name: "HiFX",
